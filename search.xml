@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Markdown基本语法学习</title>
+      <link href="/2/"/>
+      <url>/2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Markdown是什么"><a href="#Markdown是什么" class="headerlink" title="Markdown是什么"></a>Markdown是什么</h1><p>Markdown 是一种轻量级的标记语言，可用于在纯文本文档中添加格式化元素。Markdown 由 John Gruber 于 2004 年创建，如今已成为世界上最受欢迎的标记语言之一。</p><p>特点：</p><ul><li>专注于文字内容；</li><li>纯文本，易读易写，可以方便地纳入版本控制；</li><li>语法简单，没有什么学习成本，能轻松在码字的同时做出美观大方的排版。</li></ul><h1 id="Markdown-有什么用"><a href="#Markdown-有什么用" class="headerlink" title="Markdown 有什么用"></a>Markdown 有什么用</h1><p>Markdown 是做笔记、为网站创建内容以及生成可打印文档的快速、简便的方法。</p><p>学习 Markdown 语法并不需要很长时间，一旦你知道如何使用它，你就可以在几乎所有地方使用 Markdown 进行书写了。大多数人使用 Markdown 来为网站创建内容，但是 Markdown 也可以很好地格式化从电子邮件到购物清单的所有内容。</p><h1 id="Markdown-基本语法"><a href="#Markdown-基本语法" class="headerlink" title="Markdown 基本语法"></a>Markdown 基本语法</h1><p>1、标题语法：前面加<code>#</code>号表示标题，几个#就代表几级标题；</p><p>2、段落语法：用空白行将段落分割或<code>&lt;p&gt;&lt;/P&gt;</code>；</p><p>3、换行语法：末尾用多个空格换行或者<code>&lt;br&gt;</code></p><p>4、强调语法：<strong>加粗用前后两个</strong><code>*</code>,<em>斜体用单个</em><code>*</code></p><p>5、引用语法：创建块引用使用 <code>&gt;</code>，嵌套块用两个<code>&gt;&gt;</code></p><p>6、列表用法：有序列表使用数字开头后面加英文的点即1. ，数字顺序不要求，但应以1作起始，如：  </p><ol><li>列表一</li><li>列表二</li><li>列表三</li></ol><p>无序列表开头使用<code>-</code>或者<code>*</code>或者<code>+</code>，缩进列表项可进行嵌套，如：   </p><ul><li>列表一</li><li>列表二   <ul><li>列表三</li></ul></li></ul><p>7、代码语法：表示代码前后用反引号如：<code>code</code> </p><p><code>如果表示为代码的词包含一个或多个反引号语句中包含多个代码前后使用双反引号即可，如：这是一个`test`，效果如本句</code>    <br>代码块前后用三个反引号如： </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">      &lt;html&gt;</span><br><span class="line">      &lt;head&gt;</span><br><span class="line">          &lt;/head&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><p> 8、分割符语法：单独一行上使用三个 <code>*</code> 或 <code>-</code> 或 <code>_</code> ，如：    </p><hr><p> 9、链接语法：中括号内为链接名称，小括号内为链接地址，可添加双引号内写title，如：    <br>分站： <a href="http://blog.lw123.cf/" title="六味の小破站">我的小破站</a></p><p>10、图片语法：前面添加<code>！</code>后接链接语法即可</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>你好呀！</title>
+      <link href="/1/"/>
+      <url>/1/</url>
+      
+        <content type="html"><![CDATA[<p>欢迎你，本站为兴趣随心所建，尚有瑕疵，还请谅解</p><p>祝一切安好！</p>    <div id="aplayer-AxSFUsTF" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="1980964492" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"    ></div><p><img src="http://p.lw321.cf/blog/lwxs.png" alt="六味先生"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
