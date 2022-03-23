@@ -4,12 +4,18 @@
   
     
     <entry>
-      <title>python</title>
+      <title>python学习笔记</title>
       <link href="/3221/"/>
       <url>/3221/</url>
       
         <content type="html"><![CDATA[<h1 id="一、变量"><a href="#一、变量" class="headerlink" title="一、变量"></a>一、变量</h1><h2 id="命名"><a href="#命名" class="headerlink" title="命名"></a>命名</h2><p>变量名只能包含字母、数字和下划线。变量名能以字母或下划线打头，但<strong>不能以数字打头、不能包含空格</strong>。</p><h2 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h2><p>无论是哪种运算，只要有操作数是浮点数，Python默认得到的总是浮点数，即便结果原本为整数也是如此</p><p>在Python看来，1000与1_000没什么不同，1_000与10_00也没什么不同。这种表示法适用于整数和浮点数</p><h2 id="同时给多个变量赋值"><a href="#同时给多个变量赋值" class="headerlink" title="同时给多个变量赋值"></a>同时给多个变量赋值</h2><p>需要用逗号将变量名分开，对于要赋给变量的值，也需同样处理，Python将按顺序将每个值赋给对应的变量如<code>x, y, z = 0, 0, 0</code></p><h1 id="二、列表"><a href="#二、列表" class="headerlink" title="二、列表"></a>二、列表</h1><h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><p>从0而不是1开始，为访问最后一个列表元素提供了一种特殊语法。通过将索引指定为-1，可让Python返回最后一个列表元素。通过使用索引如<code>example[3]</code>调用列表元素</p><h2 id="修改列表元素"><a href="#修改列表元素" class="headerlink" title="修改列表元素"></a>修改列表元素</h2><h3 id="添加元素"><a href="#添加元素" class="headerlink" title="添加元素"></a>添加元素</h3><p>使用方法<code>append.()</code>将元素附加到列表。给列表附加元素时，它将添加到列表末尾</p><p>方法<code>insert(</code>)可在列表的任何位置添加新元素。为此，你需要指定新元素的索引和值。</p><h3 id="删除元素"><a href="#删除元素" class="headerlink" title="删除元素"></a>删除元素</h3><p>使用<strong>del</strong>语句删除任意元素，如<code>del example[3]</code></p><p>方法<code>pop()</code>来删除列表中任意位置的元素，只需在圆括号中指定要删除元素的索引即可（当你使用pop()时，被弹出的元素就不再在列表中了。）</p><p>不知道要从列表中删除的值所处的位置。如果只知道要删除的元素的值，可使用方法<code>remove()</code></p><h2 id="列表排序"><a href="#列表排序" class="headerlink" title="列表排序"></a>列表排序</h2><p>方法<code>sort()</code>永久性地修改列表元素的排列顺序，按与字母顺序相反的顺序排列列表元素，只需向方法传递参数<code>reverse=True</code>即可</p><p>函数sorted()让你能够按特定顺序显示列表元素，同时不影响它们在列表中的原始排列顺序</p><p>方法<code>reverse()</code>反转列表元素的排列顺序，不是按与字母顺序相反的顺序排列列表元素，而只是反转列表元素的排列顺序</p><p>方法<code>len()</code>可快速获悉列表的长度</p><h2 id="创建数值列表"><a href="#创建数值列表" class="headerlink" title="创建数值列表"></a>创建数值列表</h2><p>方法<code>range()</code>让你能够轻松地生成一系列数，要创建数字列表，可使用函数<code>list()</code>将range()的结果直接转换为列表。如果将range()作为list()的参数，输出将是一个数字列表。</p><p>如：for value in range(1,5)、list(range(2,11,2))：函数range()从2开始数，然后不断加2，直到达到或超过终值（11）</p><h2 id="使用列表的一部分"><a href="#使用列表的一部分" class="headerlink" title="使用列表的一部分"></a>使用列表的一部分</h2><h3 id="切片"><a href="#切片" class="headerlink" title="切片"></a>切片</h3><p>可指定要使用的第一个元素和最后一个元素的索引，如：<code>exmple[0:3]</code></p><h3 id="遍历切片"><a href="#遍历切片" class="headerlink" title="遍历切片"></a>遍历切片</h3><p>在for循环中使用切片</p><h3 id="复制列表"><a href="#复制列表" class="headerlink" title="复制列表"></a>复制列表</h3><p>要复制列表，可创建一个包含整个列表的切片，方法是同时省略起始索引和终止索引（[:]）。这让Python创建一个始于第一个元素、终止于最后一个元素的切片，即整个列表的副本。</p><h2 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h2><p>Python将不能修改的值称为不可变的，而不可变的列表被称为元组。，元组看起来很像列表，但使用<strong>圆括号</strong>而非中括号来标识</p><h1 id="三、判断"><a href="#三、判断" class="headerlink" title="三、判断"></a>三、判断</h1><p>一个等号是陈述，两个等号则是发问，在Python中检查是否相等时区分大小写</p><p>要判断两个值是否不等，可结合使用惊叹号和等号（!&#x3D;），其中的惊叹号表示不</p><p>要判断特定的值是否已包含在列表中，可使用关键字<code>in</code>，确定特定的值未包含在列表中很重要。在这种情况下，可使用关键字<code>not in</code></p><p>if-elif-else结构功能强大，但仅适合用于只有一个条件满足的情况：遇到通过了的测试后，Python就跳过余下的测试。</p><p>在if语句中将列表名用作条件表达式时，Python将在列表至少包含一个元素时返回True，并在<strong>列表为空时返回False</strong></p><h1 id="四、字典"><a href="#四、字典" class="headerlink" title="四、字典"></a>四、字典</h1><p>键值对是两个相关联的值。指定键时，Python将返回与之相关联的值。键和值之间用冒号分隔，而键值对之间用逗号分隔</p><h2 id="修改键值对"><a href="#修改键值对" class="headerlink" title="修改键值对"></a>修改键值对</h2><p>形如example[‘name’] &#x3D; ‘lw’</p><p>使用del语句时，必须指定字典名和要删除的键，删除的键值对会永远消失</p><h2 id="访问字典"><a href="#访问字典" class="headerlink" title="访问字典"></a>访问字典</h2><p>方法<code>get()</code>的第一个参数用于指定键，是必不可少的；第二个参数为指定的键不存在时要返回的值，故如果指定的键有可能不存在，应考虑使用方法get()，而不要使用方括号表示法。如果没有指定第二个参数且指定的键不存在，Python将返回值None。</p><p>用for循环来遍历字典，可声明两个变量，用于存储键值对中的键和值。这两个变量可以使用任意名称，for语句的第二部分包含字典名和方法<code>items()</code>，它返回一个键值对列表。如果只需遍历字典的键，使用方法<code>keys()</code>可让代码更容易理解，但是也可以省略它。如果只需遍历字典包含的值，用方法<code>values()</code>来返回一个值列表，不包含任何键，为剔除重复项，可使用集合（set）。集合中的每个元素都必须是独一无二的，对包含重复元素的列表调用set()，可让Python找出列表中独一无二的元素，并使用这些元素来创建一个集合。</p><p>遍历字典时将按插入的顺序返回其中的元素，要以特定顺序返回元素，一种办法是在for循环中<strong>对返回的键进行排序</strong>。为此，可使用函数<code>sorted()</code>来获得按特定顺序排列的键列表的副本</p><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><p>可使用一对花括号直接创建集合，并在其中用逗号分隔元素，当花括号内没有键值对时，定义的很可能是集合。不同于列表和字典，集合不会以特定的顺序存储元素。</p><h1 id="五、函数"><a href="#五、函数" class="headerlink" title="五、函数"></a>五、函数</h1><p>使用关键字<code>def</code>来告诉Python，你要定义一个函数。这是<strong>函数定义</strong>。</p><p><strong>文档字符串</strong>用<strong>三引号括起</strong>，Python使用它们来生成有关程序中函数的文档。</p><p>在函数的定义中，<strong>形参</strong>，即函数完成工作所需的信息。<strong>实参</strong>，即调用函数时传递给函数的信息。向函数传递实参的方式很多：可使用<strong>位置实参</strong>，这要求实参的顺序与形参的<strong>顺序相同</strong>；也可使用<strong>关键字实参</strong>，是传递给函数的名称值对。因为直接在实参中将名称和值关联起来，所以向函数传递实参时不会混淆，让你无须考虑函数调用中的实参顺序，还清楚地指出了函数调用中各个值的用途。给形参、实参指定默认值时，等号两边不要有空格。</p><p>函数返回的值称为返回值，可使用<code>return语句</code>将值返回到调用函数的代码行，函数可返回任何类型的值，包括列表和字典等较复杂的数据结构</p><p>传递任意数量的实参时，形参名例如<em>toppings中的星号让Python创建一个名为toppings的空元组，并将收到的所有值都封装到这个元组中，要让函数接受不同类型的实参，必须在函数定义中将接纳任意数量实参的形参*<em>放在最后</em></em></p><p>形参**user_info中的两个星号让Python创建一个名为user_info的空字典，并将收到的所有名称值对都放到这个字典中</p><p><strong>模块</strong>是扩展名为.py的文件，包含要导入到程序中的代码，<code>import语句</code>允许在当前运行的程序文件中使用模块中的代码。要调用被导入模块中的函数，可指定被导入模块的名称和函数名，并用<strong>句点分隔</strong>；还可以导入模块中的特定函数，这种导入方法的语法为<code>from module_name import function_name</code>通过用<strong>逗号分隔</strong>函数名，可根据需要从模块中导入任意数量的函数，使用星号（*）运算符可让Python导入模块中的所有函数</p><p>使用<code>as</code>给函数指定别名，如<code>from module_name import function_name as fn</code></p><h1 id="六、类"><a href="#六、类" class="headerlink" title="六、类"></a>六、类</h1><p>在Python中，首字母大写的名称指的是类。这个类定义中没有圆括号，因为要从空白创建这个类</p><p>方法<code>__init__()</code>是一个特殊方法，每当你根据类创建新实例时，Python都会自动运行它，开头和末尾各有两个下划线，这是一种约定，旨在避免Python默认方法与普通方法发生名称冲突，在这个方法的定义中，形参<code>self</code>必不可少，而且必须位于其他形参的前面，以self为前缀的变量可供类中的所有方法使用，可以通过类的任何实例来访问，像这样可通过实例访问的变量称为<strong>属性</strong>。</p><p>要访问实例的属性，可使用句点表示法，如下代码来访问my_dog的属性name的值：<code>my_dog.name</code>，要调用方法，可指定实例的名称和要调用的方法，并用句点分隔</p><p>定义子类时，必须在圆括号内指定父类的名称。方法__init__()接受创建的实例所需的信息。<code>super()</code>是一个特殊函数，让你能够调用父类的方法，父类也称为超类</p><p>从一个模块中导入多个类时，用<strong>逗号</strong>分隔了各个类，导入类时，也可为其指定别名</p><h1 id="七、文件和异常"><a href="#七、文件和异常" class="headerlink" title="七、文件和异常"></a>七、文件和异常</h1><h2 id="读取文件"><a href="#读取文件" class="headerlink" title="读取文件"></a>读取文件</h2><p>函数open()接受一个参数：要打开的文件的名称;Python将该对象赋给file_object供以后使用;关键字with在不再需要访问文件后将其关闭.</p><p>因为read()到达文件末尾时返回一个空字符串，而将这个空字符串显示出来时就是一个空行。要删除多出来的空行，可在函数调用print()中使用rstrip()</p><p>在相对路径行不通时，可使用绝对路径，就不用关心当前运行的程序存储在什么地方了。显示文件路径时，Windows系统使用反斜杠（\）而不是斜杠（&#x2F;），但在代码中依然可以使用斜杠。绝对路径通常比相对路径长，因此将其赋给一个变量，再将该变量传递给open()会有所帮助</p><p>将要读取的文件的名称赋给变量filename。这是使用文件时的一种常见做法，变量filename表示的并非实际文件——它只是一个让Python知道到哪里去查找文件的字符串</p><p>逐行读取时，每行的末尾都有一个看不见的换行符，而函数调用print()也会加上一个换行符，因此每行末尾都有两个换行符：一个来自文件，另一个来自函数调用print()。要消除这些多余的空白行，可在函数调用print()中使用rstrip()</p><p>使用关键字with时，open()返回的文件对象只在with代码块内可用。如果要在with代码块外访问文件的内容，可在with代码块内将文件的各行存储在一个列表中，并在with代码块外使用该列表</p><p>方法readlines()从文件中读取每一行，并将其存储在一个列表中</p>]]></content>
       
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
       
       
         <tags>
@@ -30,6 +36,12 @@
         <content type="html"><![CDATA[<h1 id="结构特点"><a href="#结构特点" class="headerlink" title="结构特点"></a>结构特点</h1><p>浸渍纸层压木质地板又称强化地板是以一层或多层专用装饰纸浸渍热固性氨基树脂铺装在高密度纤维板等人造板基材上，一般四层结构分为：表层（耐磨层）+装饰层+基材层+底层（平衡层）。平衡层：即防潮层，是纸经浸渍热固性聚酯树脂阻隔地面水分潮气，同时重量和上基材相当起到平衡作用，使装饰层具有一定厚度和强度。</p><ul><li>由于有耐磨层其表面耐磨性会优于一般油漆地板</li><li>装饰层图案极其丰富</li><li>尺寸稳定性好</li><li>表面耐污染、耐腐蚀、耐灼烧</li><li>保养方便</li></ul><hr><ul><li>采用悬浮铺设，无弹性脚感稍差（相比实木地板）</li><li>不可修复（一旦损坏，只能更换）</li><li>甲醛释放</li></ul><h1 id="加工工艺"><a href="#加工工艺" class="headerlink" title="加工工艺"></a>加工工艺</h1><p>主要两部分：贴面装饰板制造（大板生产）、机械加工工序（相比实木地板，刀具因为耐磨层的三氧化二铝需增加刀轴换金刚石刀具）</p><h2 id="大板生产"><a href="#大板生产" class="headerlink" title="大板生产"></a>大板生产</h2><p>耐磨纸+装饰层+基材+平衡纸————组坯-热压-卸板-陈放</p><p>也可以采用两次热压工艺，区别是一次热压地板无倒角或很浅，二次热压则倒角大、深，省去倒角工序。</p><h2 id="机械加工"><a href="#机械加工" class="headerlink" title="机械加工"></a>机械加工</h2><p>装饰大板-养生-剖分-二次养生-榫槽加工-检验分等</p><p>注：倒角V型槽既有立体感也减少边缘泛白，但易堆积灰尘出现黑缝；U型槽是通过模压成型技术，倒角处也有耐磨层保护更耐磨，底部更宽便于清洁无黑缝，抗冲击，也可防止毛边现象但相对价格高。现在更流行<strong>R型槽</strong>（高光大圆弧）具有U型槽全部优点而且解决铺装高低差难以控制的问题。</p>]]></content>
       
       
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
       
         <tags>
             
@@ -49,6 +61,12 @@
         <content type="html"><![CDATA[<h1 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h1><ul><li>面层为高档实木拼板或单板，低档树种实木条&#x2F;单板为芯层</li><li>每层垂直交错排列，相互限制缩涨，尺寸稳定性好</li><li>高档面层美观性提升</li><li>节约资源，提高利用率</li><li>便于铺装，价格适中</li></ul><hr><ul><li>因层压而成故胶合质量差和维护不当易导致分层开裂</li><li>表层较薄重视保养</li><li>控制甲醛量</li></ul><h1 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h1><p>两次结构、三层结构，主要面层和芯层材料的不同</p><h1 id="工艺"><a href="#工艺" class="headerlink" title="工艺"></a>工艺</h1><h2 id="多层实木复合地板："><a href="#多层实木复合地板：" class="headerlink" title="多层实木复合地板："></a>多层实木复合地板：</h2><p>三部分：基材生产、面层生产、地板加工</p><h3 id="基材生产"><a href="#基材生产" class="headerlink" title="基材生产"></a>基材生产</h3><p>基材入库-多片锯剖片-干燥-砂光-单面涂胶</p><h3 id="面层生产"><a href="#面层生产" class="headerlink" title="面层生产"></a>面层生产</h3><p>表板坯料入库-分选-四面刨-框锯剖片-砂光-干燥</p><p>注：薄面板或材质较软的加工时选用旋切和刨切，材质硬的选锯切</p><h3 id="地板加工"><a href="#地板加工" class="headerlink" title="地板加工"></a>地板加工</h3><p>组坯-冷压-养生-双端铣齐头-开背槽-定厚砂光-加工企口-油漆</p>]]></content>
       
       
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
       
         <tags>
             
@@ -67,6 +85,12 @@
       
         <content type="html"><![CDATA[<h1 id="实木地板特点"><a href="#实木地板特点" class="headerlink" title="实木地板特点"></a>实木地板特点</h1><ul><li><p>外观质朴、自然   </p></li><li><p>可调温调湿</p></li><li><p>脚感舒适、弹性真实</p></li><li><p>具有绝缘性，对电和热传导性极小</p></li><li><p>易胶结，便于铺装（直接粘贴法、龙骨铺设法）</p><hr></li><li><p>吸湿易变性</p></li><li><p>纹理色差较大</p></li><li><p>不耐腐</p></li><li><p>有可燃性</p></li><li><p>铺装、维护要求较高</p></li></ul><h1 id="实木地板分类"><a href="#实木地板分类" class="headerlink" title="实木地板分类"></a>实木地板分类</h1><h2 id="按企口分："><a href="#按企口分：" class="headerlink" title="按企口分："></a>按企口分：</h2><ul><li>榫接（主流）</li><li>平接</li></ul><h2 id="按结构分："><a href="#按结构分：" class="headerlink" title="按结构分："></a>按结构分：</h2><ul><li>长条：榫接、平接</li><li>拼花：小规格地板条按一定形状拼图案</li><li>镶嵌：各色小木块按设计图案胶拼在一起形成胶拼地板</li><li>集成材：指接长料故而变形量小，尺寸稳定</li><li>竖木：以木材横截面为耐磨面，似马赛克，更耐磨，充分利用木材，图案更丰富</li></ul><h2 id="按表面有无油漆分："><a href="#按表面有无油漆分：" class="headerlink" title="按表面有无油漆分："></a>按表面有无油漆分：</h2><p>涂饰与未涂饰</p><h1 id="常见规格"><a href="#常见规格" class="headerlink" title="常见规格"></a>常见规格</h1><h2 id="长度"><a href="#长度" class="headerlink" title="长度"></a>长度</h2><ul><li>短板：760mm 以下</li><li>标准：900&#x2F;910mm</li><li>超长板：1200mm以上</li></ul><h2 id="宽度"><a href="#宽度" class="headerlink" title="宽度"></a>宽度</h2><ul><li>标板：90-100mm</li><li>宽板：100mm以上</li></ul><h2 id="厚度"><a href="#厚度" class="headerlink" title="厚度"></a>厚度</h2><ul><li>室内：18-20mm</li><li>地热：小于12mm</li><li>体育：大于20mm</li></ul><h1 id="材质选择"><a href="#材质选择" class="headerlink" title="材质选择"></a>材质选择</h1><p>木材建议性质均匀，软硬适中，弹性好，耐磨性好， 纹理色泽均匀美观，耐腐，涨缩性小，不易翘曲开裂，加工性能好，易胶结和涂饰等</p><p>国产常用桦木、水曲柳、柞木，密度在600-700左右</p><h1 id="加工工艺"><a href="#加工工艺" class="headerlink" title="加工工艺"></a>加工工艺</h1><h2 id="榫接长条："><a href="#榫接长条：" class="headerlink" title="榫接长条："></a>榫接长条：</h2><ol><li>原木加工：选材+原木造材+剖料+再剖</li><li>坯料气干、窑干</li><li>成型加工：分选-基准加工-企口加工-砂光</li><li>油漆、检验、包装</li></ol><ul><li>设计木段比成品长2-3cm作余量</li><li>先设计长规格标准板后设计短板</li><li>原木锯解直径小的选两面下锯法，留加工、干缩、企口余量，总约10mm</li><li>木段再剖改用小带锯或框锯（锯路小）</li><li>干燥过程需<strong>中间处理</strong>（对表面喷蒸处理）削弱含水率梯度缓和应力减少干燥缺陷，干燥结束需<strong>养生处理</strong>消除残余应力</li></ul><h2 id="竖木地板："><a href="#竖木地板：" class="headerlink" title="竖木地板："></a>竖木地板：</h2><p>采用整张化工序</p><p>原料-截断-剥皮-干燥-锯方-截断-防腐-涂胶-铺板-刨平-砂光-油漆</p>]]></content>
       
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
       
       
         <tags>
@@ -89,7 +113,7 @@
       
       <categories>
           
-          <category> 学习 </category>
+          <category> 笔记 </category>
           
       </categories>
       
@@ -109,7 +133,7 @@
       <link href="/1/"/>
       <url>/1/</url>
       
-        <content type="html"><![CDATA[<p>欢迎你，本站为兴趣随心所建，尚有瑕疵，还请谅解</p><p>祝一切安好！</p>    <div id="aplayer-wzTlenOV" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="1980964492" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"    ></div><p><img src="https://s2.loli.net/2022/03/22/dW7vzLDjYkryAGE.png" alt="六味先生"></p>]]></content>
+        <content type="html"><![CDATA[<p>欢迎你，本站为兴趣随心所建，尚有瑕疵，还请谅解</p><p>祝一切安好！</p>    <div id="aplayer-DjmAVWsX" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="1980964492" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"    ></div><p><img src="https://s2.loli.net/2022/03/22/dW7vzLDjYkryAGE.png" alt="六味先生"></p>]]></content>
       
       
       
